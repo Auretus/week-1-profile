@@ -34,6 +34,7 @@ header {
     width: 100%;
     margin: 0;
     padding: 0;
+    /* height 5em; */
 }
 
 .headerBlock {
@@ -49,7 +50,7 @@ header {
     border: 0;
     margin: 0;
     width: 325px;
-    height: 5em;
+    height: 100%;
 }
 
 .navBlock {
@@ -83,7 +84,7 @@ header {
 
 main {
     border-color: #ddd;
-    /* background-color: #fff;  */
+    padding-top: 6em;
 }
 
 .spacerBlock {
@@ -116,7 +117,7 @@ main {
 .fancyPicture {
     background-color: #fff;
     margin-bottom: 25px;
-    width: 150px;
+    width: 300px;
     float: left;
     margin: 2em;
 }
