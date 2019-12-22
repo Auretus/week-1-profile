@@ -13,9 +13,9 @@ body {
 }
 
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,9 +26,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    /* line-height: 3em; */
     background-color: #fff !important;
     border-bottom: 2px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .headerBlock {
@@ -81,6 +86,10 @@ main {
     /* background-color: #fff;  */
 }
 
+.spacerBlock {
+    height: 3em;
+}
+
 .contentBlock {
     width: 960px;
     margin: 0 auto;
@@ -93,15 +102,50 @@ main {
 .imgLeft {
     float: left;
     border: 1px solid transparent;
-    padding: 1em 1em 1em 0;
+    padding: 0;
+    margin: 1em 1em 1em 0;
+    width: 30%;
 }
 
-/* #Contact {
-    position: relative;
-    top: 30px;
-    margin-bottom: 30px;
+.thumbnail {
+    width: 100%;
+    border: 1px solid transparent;
+    display: inline-block;
 }
-*/
+
+.fancyPicture {
+    background-color: #fff;
+    margin-bottom: 25px;
+    width: 30%;
+    float: left;
+    margin: 2em;
+}
+
+.fancyLink {
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -180%);
+    color: #fff;
+    background-color: #4aaaa5;    
+}
+
+.fancyLink a:link, .fancyLink a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fancyLink a:hover, .fancyLink a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.lineBreak {
+    clear: both;
+}
+
 label {
     position: relative;
     display: inline-block;
@@ -109,7 +153,8 @@ label {
     width: 0px;
     margin: 0;
     padding: 0.25em 0;
-} 
+}
+
 input {
     width: 100%;
 }
@@ -131,8 +176,9 @@ textarea {
 }
 
 footer {
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #666;
     color: #fff;
